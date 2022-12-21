@@ -14,7 +14,7 @@ export default class Solution {
   shuffle(): number[] {
     let result: number[] = [];
     let tmpArr: number[];
-    tmpArr = this.oriArr;
+    tmpArr = this.oriArr.slice();
     while (tmpArr.length > 0) {
       let idx = this.rnd(0, tmpArr.length - 1);
       result.push(tmpArr[idx]);
